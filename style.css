@@ -18,18 +18,34 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 span {
     color: #FCDC8F;
 }
 
+p, h1, a, h2 {
+    color: #FFF;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 37px;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3.0rem;
+    line-height: 37px;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.3);
+}
 
 /* Navbar */
 
 header {
-    background-color: #202020;
+    background-color: #262626;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -83,10 +99,9 @@ header nav .menu li a:hover {
     display: none;
 }
 
-
 /* Section Perfil */
 
-section.perfil {
+section#perfil {
     background-color: #181818;
     display: flex;
     flex-wrap: wrap;
@@ -94,52 +109,79 @@ section.perfil {
     padding: 80px 100px;
 }
 
-section.perfil div.perfil-img img {
+section#perfil div.perfil-img img {
     border-radius: 100%;
     width: auto;
     height: 250px;
 }
 
-section.perfil div.perfil-info {
+section#perfil div.perfil-info {
     padding: 50px 50px 0;
 }
 
-section.perfil div.perfil-info p, section.perfil div.perfil-info h1 {
-    color: #FFF;
-}
-
-section.perfil div.perfil-info p {
+section#perfil div.perfil-info p {
     font-weight: 500;
     font-size: 2.8rem;
     line-height: 40px;
 }
 
-section.perfil div.perfil-info p:nth-child(3) {
+section#perfil div.perfil-info p:nth-child(3) {
     margin-left: 100px;
 }
 
-section.perfil div.perfil-info h1 {
-    font-weight: 900;
-    font-size: 3.2rem;
-    line-height: 37px;
+section#perfil div.perfil-info h1 {
     text-align: center;
     margin-bottom: 35px;
 }
 
+/* Section Sobre */
+
+section#sobre {
+    background-color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 100px;
+}
+
+section#sobre div.sobre-info h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section#sobre div.sobre-info p {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+section#sobre div.sobre-info p:nth-child(2){
+    margin-bottom: 15px;
+}
 
 /* Resposive */
 
-@media screen and (max-width: 1066px) {
+@media screen and (max-width: 1082px) {
     /* Section Perfil */
-    section.perfil div.perfil-info p {
+    section#perfil div.perfil-info p {
         text-align: center;
         font-size: 2.4rem;
     }
-    section.perfil div.perfil-info h1 {
+    section#perfil div.perfil-info h1 {
         font-size: 3.0rem;
     }
-    section.perfil div.perfil-info p:nth-child(3) {
+    section#perfil div.perfil-info p:nth-child(3) {
         margin: auto;
+    }
+
+    /* Section Sobre */
+    section#sobre div.sobre-info h2 {
+        font-size: 2.8rem;
+    }
+    section#sobre div.sobre-info p {
+        font-size: 2.4rem;
     }
 }
 
@@ -174,50 +216,71 @@ section.perfil div.perfil-info h1 {
     }
 }
 
-@media screen and (max-width: 655px) {
-    /* Section Perfil */
-    section.perfil {
-        padding: 50px 15px;
-    }
-}
-
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 810px) {
     /* Navbar */
     header {
         padding: 0px 25px;
     }
+
+    /* Section Sobre */
+    section#sobre {
+        padding: 50px 20px;
+    }
 }
 
-@media screen and (max-width: 492px) {
+@media screen and (max-width: 672px) {
     /* Section Perfil */
-    section.perfil div.perfil-img img {
+    section#perfil {
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (max-width: 502px) {
+    /* Section Perfil */
+    section#perfil div.perfil-img img {
         width: auto;
         height: 200px;
     }
-    section.perfil div.perfil-info p {
+    section#perfil div.perfil-info p {
         font-size: 2.0rem;
     }
-    section.perfil div.perfil-info h1 {
+    section#perfil div.perfil-info h1 {
         font-size: 2.8rem;
     }
-    section.perfil div.perfil-info {
+    section#perfil div.perfil-info {
         padding: 30px 15px 0;
+    }
+
+    /* Section Sobre */
+    section#sobre div.sobre-info h2 {
+        font-size: 2.6rem;
+    }
+    section#sobre div.sobre-info p {
+        font-size: 2.0rem;
     }
 }
 
 @media screen and (max-width: 420px) {
     /* Section Perfil */
-    section.perfil {
+    section#perfil {
         padding: 50px 0px;
     }
 }
 
-@media screen and (max-width: 326px) {
+@media screen and (max-width: 344px) {
     /* Section Perfil */
-    section.perfil div.perfil-info p {
+    section#perfil div.perfil-info p {
         font-size: 1.8rem;
     }
-    section.perfil div.perfil-info h1 {
+    section#perfil div.perfil-info h1 {
         font-size: 2.6rem;
-    }  
+    }
+
+    /* Section Sobre */
+    section#sobre div.sobre-info h2 {
+        font-size: 2.4rem;
+    }
+    section#sobre div.sobre-info p {
+        font-size: 1.8rem;
+    }
 }
