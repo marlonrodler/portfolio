@@ -173,7 +173,7 @@ section.perfil div.perfil-info h1 {
     }
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 655px) {
     /* Section Perfil */
     section.perfil {
         padding: 50px 15px;
