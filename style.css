@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* a cada 1rem será considerado 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    color: #FCDC8F;
+}
+
+header {
+    background-color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header a.logo {
+    font-size: 2.6rem;
+}
+
+header nav .menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu li a, header a {
+    display: block;
+    padding: 25px 30px;
+}
+
+header nav .menu li a {
+    font-size: 2.0rem;
+    transition: all .5s;
+}
+
+header nav .menu li a:hover {
+    background: #303030;
+    border-bottom: 1.5px solid #FCDC8F;
+    color: #FCDC8F;
+}
+
+.checkbtn {
+    display: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.checkbtn i {
+    font-size: 3.6rem;
+}
+
+#check {
+    display: none;
+}
+
+section.perfil {
+    background-color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 100px;
+}
+
+section.perfil div.perfil-img img {
+    border-radius: 100%;
+    width: auto;
+    height: 250px;
+}
+
+section.perfil div.perfil-info {
+    padding: 50px 50px 0;
+}
+
+section.perfil div.perfil-info p, section.perfil div.perfil-info h1 {
+    color: #FFF;
+}
+
+section.perfil div.perfil-info p {
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 40px;
+}
+
+section.perfil div.perfil-info p:nth-child(3) {
+    margin-left: 100px;
+}
+
+section.perfil div.perfil-info h1 {
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1056px) {
+    section.perfil div.perfil-info p {
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    section.perfil div.perfil-info h1 {
+        font-size: 3.0rem;
+    }
+    section.perfil div.perfil-info p:nth-child(3) {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    .checkbtn {
+        display: block;
+    }
+    header nav .menu {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: #262626;
+        top: 82px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header nav .menu li {
+        margin: 0;
+    }
+    header nav .menu li a {
+        padding: 30px;
+        transition: all .5s;
+    }
+    header nav .menu li a:hover, header nav .menu li a:active {
+        background: #303030;
+    }
+    #check:checked~.menu {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    section.perfil {
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    header {
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    section.perfil div.perfil-img img {
+        width: auto;
+        height: 200px;
+    }
+    section.perfil div.perfil-info p {
+        font-size: 2.0rem;
+    }
+    section.perfil div.perfil-info h1 {
+        font-size: 2.8rem;
+    }
+    section.perfil div.perfil-info {
+        padding: 30px 15px 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section.perfil {
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section.perfil div.perfil-info p {
+        font-size: 1.8rem;
+    }
+    section.perfil div.perfil-info h1 {
+        font-size: 2.6rem;
+    }  
+}
