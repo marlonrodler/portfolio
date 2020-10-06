@@ -58,12 +58,13 @@ header nav .menu li a, header a {
 
 header nav .menu li a {
     font-size: 2.0rem;
+    border-bottom: 1px solid transparent;
     transition: all .5s;
 }
 
 header nav .menu li a:hover {
     background: #303030;
-    border-bottom: 1.5px solid #FCDC8F;
+    border-bottom: 1px solid #FCDC8F;
     color: #FCDC8F;
 }
 
