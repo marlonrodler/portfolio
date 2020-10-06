@@ -25,6 +25,9 @@ span {
     color: #FCDC8F;
 }
 
+
+/* Navbar */
+
 header {
     background-color: #202020;
     display: flex;
@@ -79,6 +82,9 @@ header nav .menu li a:hover {
     display: none;
 }
 
+
+/* Section Perfil */
+
 section.perfil {
     background-color: #181818;
     display: flex;
@@ -119,7 +125,11 @@ section.perfil div.perfil-info h1 {
     margin-bottom: 35px;
 }
 
+
+/* Resposive Display */
+
 @media screen and (max-width: 1056px) {
+    /* Section Perfil */
     section.perfil div.perfil-info p {
         text-align: center;
         font-size: 2.4rem;
@@ -133,6 +143,7 @@ section.perfil div.perfil-info h1 {
 }
 
 @media screen and (max-width: 956px) {
+    /* Navbar */
     .checkbtn {
         display: block;
     }
@@ -163,18 +174,21 @@ section.perfil div.perfil-info h1 {
 }
 
 @media screen and (max-width: 648px) {
+    /* Section Perfil */
     section.perfil {
         padding: 50px 15px;
     }
 }
 
 @media screen and (max-width: 615px) {
+    /* Navbar */
     header {
         padding: 0px 25px;
     }
 }
 
 @media screen and (max-width: 492px) {
+    /* Section Perfil */
     section.perfil div.perfil-img img {
         width: auto;
         height: 200px;
@@ -191,12 +205,14 @@ section.perfil div.perfil-info h1 {
 }
 
 @media screen and (max-width: 420px) {
+    /* Section Perfil */
     section.perfil {
         padding: 50px 0px;
     }
 }
 
 @media screen and (max-width: 320px) {
+    /* Section Perfil */
     section.perfil div.perfil-info p {
         font-size: 1.8rem;
     }
