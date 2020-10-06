@@ -142,7 +142,7 @@ section.perfil div.perfil-info h1 {
     }
 }
 
-@media screen and (max-width: 956px) {
+@media screen and (max-width: 1010px) {
     /* Navbar */
     .checkbtn {
         display: block;
