@@ -59,6 +59,7 @@ nav {
 
 header a.logo {
     font-size: 2.6rem;
+    font-weight: bold;
 }
 
 header nav .menu {
@@ -161,6 +162,36 @@ section#sobre div.sobre-info p:nth-child(2){
     margin-bottom: 15px;
 }
 
+
+/* Section Projetos */
+
+section#projetos {
+    background-color: #181818;
+    padding: 80px 100px;
+}
+
+section#projetos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section#projetos div.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+section#projetos div.projetos-container div.projetos-item {
+    flex: 1 1 230px;
+    height: 250px;
+    width: auto;
+    background-color: #FCDC8F;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #ffe6ac81;
+}
+
 /* Resposive */
 
 @media screen and (max-width: 1082px) {
@@ -177,7 +208,7 @@ section#sobre div.sobre-info p:nth-child(2){
     }
 
     /* Section Sobre */
-    section#sobre div.sobre-info h2 {
+    h2 {
         font-size: 2.8rem;
     }
     section#sobre div.sobre-info p {
@@ -226,6 +257,12 @@ section#sobre div.sobre-info p:nth-child(2){
     section#sobre {
         padding: 50px 20px;
     }
+
+    
+    /* Section Projetos */
+    section#projetos {
+        padding: 80px 15px;
+    }
 }
 
 @media screen and (max-width: 672px) {
@@ -252,7 +289,7 @@ section#sobre div.sobre-info p:nth-child(2){
     }
 
     /* Section Sobre */
-    section#sobre div.sobre-info h2 {
+    h2 {
         font-size: 2.6rem;
     }
     section#sobre div.sobre-info p {
@@ -277,7 +314,7 @@ section#sobre div.sobre-info p:nth-child(2){
     }
 
     /* Section Sobre */
-    section#sobre div.sobre-info h2 {
+    h2 {
         font-size: 2.4rem;
     }
     section#sobre div.sobre-info p {
