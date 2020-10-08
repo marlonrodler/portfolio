@@ -139,7 +139,7 @@ section#perfil div.perfil-info h1 {
 
 /* Section Sobre */
 
-section#sobre {
+section#about {
     background-color: #202020;
     display: flex;
     flex-wrap: wrap;
@@ -147,12 +147,12 @@ section#sobre {
     padding: 80px 100px;
 }
 
-section#sobre div.sobre-info h2 {
+section#about div.about-info h2 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-section#sobre div.sobre-info p {
+section#about div.about-info p {
     font-weight: 300;
     font-size: 26px;
     line-height: 30px;
@@ -160,31 +160,29 @@ section#sobre div.sobre-info p {
     text-indent: 1.5em;
 }
 
-section#sobre div.sobre-info p:nth-child(2){
+section#about div.about-info p:nth-child(2) {
     margin-bottom: 15px;
 }
 
+/* Section Projeto */
 
-/* Section Projetos */
-
-section#projetos {
+section#projects {
     background-color: #181818;
     padding: 80px 100px;
 }
 
-section#projetos h2 {
+section#projects h2 {
     text-align: center;
     margin-bottom: 40px;
 }
 
-section#projetos div.projetos-container {
+section#projects div.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
-section#projetos div.projetos-container div.projetos-item {
+section#projects div.projects-container div.projects-item {
     flex: 1 1 230px;
     height: 250px;
     width: auto;
@@ -194,9 +192,118 @@ section#projetos div.projetos-container div.projetos-item {
     box-shadow: 0px 0px 10px #ffe6ac81;
 }
 
-/* Resposive */
+/* Section Timeline */
+
+section#timeline {
+    background-color: #202020;
+    padding: 80px 100px;
+}
+
+section#timeline h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section#timeline div.timeline-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#timeline div.timeline-container div.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section#timeline div.timeline-container div.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #FCDC8F;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+section#timeline div.timeline-container div.timeline div.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+section#timeline div.timeline-container div.timeline div.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #FFF;
+    border: 4px solid #FCDC8F;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+section#timeline div.timeline-container div.timeline div.left {
+    left: 0;
+}
+
+section#timeline div.timeline-container div.timeline div.right {
+    left: 50%;
+}
+
+section#timeline div.timeline-container div.timeline div.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #FFF;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #FFF;
+}
+
+section#timeline div.timeline-container div.timeline div.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #FFF;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #FFF transparent transparent;
+}
+
+section#timeline div.timeline-container div.timeline div.right::after {
+    left: -16px;
+}
+
+section#timeline div.timeline-container div.timeline div.container div.content {
+    padding: 20px 30px;
+    background-color: #FFF;
+    position: relative;
+    border-radius: 6px;
+}
+
+section#timeline div.timeline-container div.timeline div.container div.content h2 {
+    margin-bottom: 10px;
+}
+
+section#timeline div.timeline-container div.timeline div.container div.content h2, section#timeline div.timeline-container div.timeline div.container div.content p {
+    color: #000;
+}
 
 @media screen and (max-width: 1082px) {
+    h2 {
+        font-size: 2.8rem;
+    }
     /* Section Perfil */
     section#perfil div.perfil-info p {
         text-align: center;
@@ -208,12 +315,8 @@ section#projetos div.projetos-container div.projetos-item {
     section#perfil div.perfil-info p:nth-child(3) {
         margin: auto;
     }
-
-    /* Section Sobre */
-    h2 {
-        font-size: 2.8rem;
-    }
-    section#sobre div.sobre-info p {
+    /* Section about */
+    section#about div.about-info p {
         font-size: 2.4rem;
     }
 }
@@ -254,16 +357,35 @@ section#projetos div.projetos-container div.projetos-item {
     header {
         padding: 0px 25px;
     }
-
     /* Section Sobre */
-    section#sobre {
+    section#about {
         padding: 50px 20px;
     }
-
-    
     /* Section Projetos */
-    section#projetos {
+    section#projects {
         padding: 50px 15px;
+    }
+    /* Section Timeline */
+    section#timeline div.timeline-container div.timeline::after {
+        left: 31px;
+    }
+    section#timeline div.timeline-container div.timeline div.container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    section#timeline div.timeline-container div.timeline div.container::before {
+        left: 60px;
+        border: medium solid #FFF;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #FFF transparent transparent;
+    }
+    section#timeline div.timeline-container div.timeline div.left::after, 
+    section#timeline div.timeline-container div.timeline div.right::after {
+        left: 15px;
+    }
+    section#timeline div.timeline-container div.timeline div.right {
+        left: 0%;
     }
 }
 
@@ -272,9 +394,16 @@ section#projetos div.projetos-container div.projetos-item {
     section#perfil {
         padding: 50px 15px;
     }
+    /* Section Timeline */
+    section#timeline {
+        padding: 50px 15px;
+    }
 }
 
 @media screen and (max-width: 502px) {
+    h2 {
+        font-size: 2.6rem;
+    }
     /* Section Perfil */
     section#perfil div.perfil-img img {
         width: auto;
@@ -289,12 +418,8 @@ section#projetos div.projetos-container div.projetos-item {
     section#perfil div.perfil-info {
         padding: 30px 15px 0;
     }
-
     /* Section Sobre */
-    h2 {
-        font-size: 2.6rem;
-    }
-    section#sobre div.sobre-info p {
+    section#about div.about-info p {
         font-size: 2.0rem;
     }
 }
@@ -307,6 +432,9 @@ section#projetos div.projetos-container div.projetos-item {
 }
 
 @media screen and (max-width: 344px) {
+    h2 {
+        font-size: 2.4rem;
+    }
     /* Section Perfil */
     section#perfil div.perfil-info p {
         font-size: 1.8rem;
@@ -314,12 +442,8 @@ section#projetos div.projetos-container div.projetos-item {
     section#perfil div.perfil-info h1 {
         font-size: 2.6rem;
     }
-
     /* Section Sobre */
-    h2 {
-        font-size: 2.4rem;
-    }
-    section#sobre div.sobre-info p {
+    section#about div.about-info p {
         font-size: 1.8rem;
     }
 }
