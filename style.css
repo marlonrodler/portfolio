@@ -154,7 +154,7 @@ section#about div.about-info h2 {
 
 section#about div.about-info p {
     font-weight: 300;
-    font-size: 26px;
+    font-size: 2.6rem;
     line-height: 30px;
     text-align: justify;
     text-indent: 1.5em;
@@ -184,7 +184,7 @@ section#projects div.projects-container {
 
 section#projects div.projects-container div.projects-item {
     flex: 1 1 230px;
-    height: 250px;
+    height: 200px;
     width: auto;
     background-color: #FCDC8F;
     margin: 15px;
@@ -300,6 +300,80 @@ section#timeline div.timeline-container div.timeline div.container div.content h
     color: #000;
 }
 
+
+/* Section Conhecimentos */
+
+section#knowledge {
+    background-color: #181818;
+    padding: 80px 100px;
+}
+
+section#knowledge h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section#knowledge div.knowledge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#knowledge div.knowledge-container div.knowledge-item {
+    flex: 1 1 230px;
+    height: 250px;
+    width: auto;
+    background-color: #FCDC8F;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #ffe6ac81;
+}
+
+
+/* Footer */
+
+footer#footer {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    padding: 80px 100px;
+}
+
+footer#footer div.footer-container p {
+    font-weight: 200;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Footer Icons */
+
+footer#footer div.icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+footer#footer div.icons div.icon-item {
+    padding: 10px;
+    background: #181818;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+footer#footer div.icons div.icon-item a {
+    width: auto;
+    height: auto;
+}
+
+footer#footer div.icons div.icon-item a i {
+    align-items: center;
+    font-size: 1.8rem;
+    color: #FCDC8F;
+}
+
+
 @media screen and (max-width: 1082px) {
     h2 {
         font-size: 2.8rem;
@@ -387,6 +461,14 @@ section#timeline div.timeline-container div.timeline div.container div.content h
     section#timeline div.timeline-container div.timeline div.right {
         left: 0%;
     }
+    /* Section Conhecimentos */
+    section#knowledge {
+        padding: 50px 15px;
+    }
+    /* Section Footer */
+    footer#footer {
+        padding: 50px 15px;
+    }
 }
 
 @media screen and (max-width: 672px) {
@@ -445,5 +527,9 @@ section#timeline div.timeline-container div.timeline div.container div.content h
     /* Section Sobre */
     section#about div.about-info p {
         font-size: 1.8rem;
+    }
+    /* Section Footer */
+    footer#footer div.footer-container p {
+        font-size: 1.6rem;
     }
 }
